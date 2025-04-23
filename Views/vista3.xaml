@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jdelgadoS3A.Views.vista3"
+             Title="vista3">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            
+
+            <Label 
+         Text="Ventana De Registro"
+             FontSize="20"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+
+            <Entry
+                Style="{StaticResource estiloEntry}"
+                x:Name="txtUsuario"
+                Placeholder="Ingrese Usuario"/>
+
+            <Entry
+                Style="{StaticResource estiloEntry}"
+                x:Name="txtContrasena"
+                Placeholder="Ingrese COntraseña"
+                IsPassword="True"/>
+
+            <Button x:Name="btnGuardar"
+                    Text="Guardar"
+                    Clicked="btnGuardar_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
